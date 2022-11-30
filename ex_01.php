@@ -1,7 +1,7 @@
 <?php
 
 
-function  my_facto_rec($nbr)
+function  my_facto($nbr)
 {
     if($nbr>0 && is_int($nbr))
     {

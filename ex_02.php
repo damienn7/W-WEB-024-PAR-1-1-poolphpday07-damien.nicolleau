@@ -33,4 +33,4 @@ function  my_facto_rec($nbr)
 
 }
 
-echo my_facto_rec(7);
+//echo my_facto_rec(7);
