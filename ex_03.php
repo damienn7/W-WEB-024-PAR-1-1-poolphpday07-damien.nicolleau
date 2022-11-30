@@ -1,8 +1,8 @@
 <?php
 
-function int_pow($nb_a,$nb_b)
+function my_pow($nb_a,$nb_b)
 {   
-    if(is_int($nb_a)&&$nb_b>0)
+    if(is_int($nb_a)&&is_int($nb_b))
     {   
     
         if($nb_b>0)
@@ -24,4 +24,4 @@ function int_pow($nb_a,$nb_b)
     }
 }
 
-//echo int_pow(3,0);
+//echo my_pow(3,0);

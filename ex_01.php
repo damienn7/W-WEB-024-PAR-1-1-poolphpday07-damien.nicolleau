@@ -1,6 +1,5 @@
 <?php
 
-
 function  my_facto($nbr)
 {
     if($nbr>0 && is_int($nbr))
@@ -11,7 +10,7 @@ function  my_facto($nbr)
         }
         return $return;
     }
-    elseif($nbr===0)
+    elseif($nbr==0)
     {
         return 1;
     }

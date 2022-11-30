@@ -1,9 +1,10 @@
 <?php
+/*
 
 function  my_facto_rec($nbr)
 {
-    static $return=1;
-    static $i=2;
+    $return=1;
+    $i=2;
     if($nbr>0 && is_int($nbr))
     {   if($i<=$nbr)
         {
@@ -33,4 +34,21 @@ function  my_facto_rec($nbr)
 
 }
 
+echo my_facto_rec(7);*/
+
+function my_facto_rec($nbr)
+{
+    if($nbr<0)
+    {
+        return -1;
+    }
+    if($nbr==0)
+    {
+        return 1;
+    }
+
+    return ($n*factorial($nbr-1));
+}
+
 //echo my_facto_rec(7);
+
