@@ -2,6 +2,11 @@
 
 function sum_it($nbr, $iteration)
 {
+    if((!isset($nbr) || !isset($iteration))||(!is_int($nbr)||!is_int($iteration)))
+    {
+        return NULL;
+    }
+
     if($nbr>0 && $iteration>0)
     {
         for($i=0;$i<$iteration;$i++)
@@ -31,4 +36,4 @@ function sum_it($nbr, $iteration)
     }
 }
 
-echo sum_it(-5,-3);
+//echo sum_it(-5,-3);
