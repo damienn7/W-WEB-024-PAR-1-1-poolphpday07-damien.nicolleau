@@ -4,6 +4,7 @@ function int_pow($nb_a,$nb_b)
 {   
     if(is_int($nb_a)&&$nb_b>0)
     {   
+    
         if($nb_b>0)
         {
         $result=1;
@@ -13,6 +14,9 @@ function int_pow($nb_a,$nb_b)
         }
         return $result;
     }
+    }elseif($nb_b==0)
+    {
+        return 1;
     }
     else
     {
@@ -20,4 +24,4 @@ function int_pow($nb_a,$nb_b)
     }
 }
 
-//echo int_pow(-2,2);
+//echo int_pow(3,0);
