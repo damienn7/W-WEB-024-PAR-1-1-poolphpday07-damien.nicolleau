@@ -2,6 +2,11 @@
 
 function str_beautifuler($str)
 {   
+    if(!isset($str) || !is_string($str))
+    {
+        return NULL;
+    }
+
     $arr=explode(" ",$str);
 
     foreach($arr as $key=>$value)
