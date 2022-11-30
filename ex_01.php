@@ -16,7 +16,7 @@ function  my_facto($nbr)
     }
     else
     {
-        return NUll;
+        return NULL;
     }
 }
 

@@ -25,26 +25,36 @@ function my_pow_rec($nbr, $power)
 */
 
 
-function my_pow_rec(int $nbr,int $power)
+function my_pow_rec($nbr,$power)
 {   
+    
     if(!is_int($nbr)||!is_int($power))
     {
         return NULL;
     }
 
+    if($nbr ==0 || $power==0)
+    {
+        return 1;
+    }
+
     if(isset($nbr)&&isset($power))
     {
-        $power=$power-1;
+        //$power=$power-1;
         if($power==0)
         {
-            return $nbr ;
+            return 1;
         }
 
         if($power<0)
         {
             return NULL;
         }
-        return ($nbr*my_pow_rec($nbr,$power));
+        if($power>=0)
+        {
+            return ($nbr*my_pow_rec($nbr,$power-1));
+        }
+        
     }
     else
     {
@@ -52,4 +62,4 @@ function my_pow_rec(int $nbr,int $power)
     }
 }
 
-//echo my_pow_rec(2,2);
+//echo my_pow_rec();

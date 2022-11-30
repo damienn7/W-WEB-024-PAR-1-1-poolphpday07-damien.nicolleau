@@ -46,8 +46,10 @@ function my_facto_rec($nbr)
     {
         return 1;
     }
-
-    return ($n*factorial($nbr-1));
+    if($nbr>=0)
+    {
+        return ($nbr*my_facto_rec($nbr-1));
+    }
 }
 
 //echo my_facto_rec(7);
