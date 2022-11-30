@@ -38,6 +38,11 @@ echo my_facto_rec(7);*/
 
 function my_facto_rec($nbr)
 {
+    if(!isset($nbr))
+    {
+        return NULL;
+    }
+    
     if($nbr<0)
     {
         return -1;

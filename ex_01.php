@@ -18,6 +18,11 @@ function  my_facto($nbr)
     {
         return NULL;
     }
+
+    if(!isset($nbr))
+    {
+        return NULL;
+    }
 }
 
 //var_dump(my_facto_rec(7));
