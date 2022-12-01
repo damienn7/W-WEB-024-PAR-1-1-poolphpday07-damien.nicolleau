@@ -1,6 +1,6 @@
 <?php
 
-function my_pow($nb_a,$nb_b)
+function my_pow($nb_a=NULL,$nb_b=NULL)
 {   
     if(is_int($nb_a)&&is_int($nb_b))
     {   

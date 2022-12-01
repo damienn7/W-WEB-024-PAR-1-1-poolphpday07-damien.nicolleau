@@ -1,8 +1,8 @@
 <?php
 
-function str_beautifuler($str)
+function str_beautifuler($str=NULL)
 {   
-    if(!isset($str) || !is_string($str))
+    if($str==NULL|| !is_string($str))
     {
         return NULL;
     }

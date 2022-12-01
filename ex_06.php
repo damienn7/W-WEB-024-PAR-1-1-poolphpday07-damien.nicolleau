@@ -1,10 +1,10 @@
 <?php
 
-function sum_rec($nbr, $iteration)
+function sum_rec($nbr=NULL, $iteration=NULL)
 {
-    if((!isset($nbr) || !isset($iteration))||(!is_int($nbr)||!is_int($iteration)))
+    if(($nbr==NULL || $iteration==NULL)||(!is_int($nbr)||!is_int($iteration)))
     {
-        return NULL;
+        return $nbr;
     }
 
     if($nbr>0 && $iteration>0)

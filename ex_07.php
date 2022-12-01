@@ -1,8 +1,15 @@
 <?php
 
-function str_to_wordtab($str, $delim)
+function str_to_wordtab($str=NULL, $delim=NULL)
 {
-    return explode($delim,$str);
+    if(($str==NULL || $delim==NULL)||(!is_string($str)||!is_string($delim)))
+    {
+        return $str;
+    }
+    else
+    {
+        return explode($delim,$str);
+    }
 }
 
 //var_dump(str_to_wordtab("dedhji dezduhd azdbhjzd dzdhkjz"," "));

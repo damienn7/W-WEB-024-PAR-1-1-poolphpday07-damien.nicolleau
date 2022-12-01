@@ -36,13 +36,12 @@ function  my_facto_rec($nbr)
 
 echo my_facto_rec(7);*/
 
-function my_facto_rec($nbr)
-{
-    if(!isset($nbr))
+function my_facto_rec($nbr=NULL)
+{    
+    if($nbr==NULL)
     {
-        return NULL;
+        return $nbr;
     }
-    
     if($nbr<0)
     {
         return -1;

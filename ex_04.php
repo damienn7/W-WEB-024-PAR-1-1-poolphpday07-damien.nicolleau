@@ -25,12 +25,12 @@ function my_pow_rec($nbr, $power)
 */
 
 
-function my_pow_rec($nbr,$power)
+function my_pow_rec($nbr=NULL,$power=NULL)
 {   
     
     if(!is_int($nbr)||!is_int($power))
     {
-        return NULL;
+        return $nbr;
     }
 
     if($nbr ==0 || $power==0)
@@ -38,7 +38,7 @@ function my_pow_rec($nbr,$power)
         return 1;
     }
 
-    if(isset($nbr)&&isset($power))
+    if($nbr!==NULL&&$power!==NULL)
     {
         //$power=$power-1;
         if($power==0)
@@ -58,7 +58,7 @@ function my_pow_rec($nbr,$power)
     }
     else
     {
-        return NULL;
+        return $nbr;
     }
 }
 

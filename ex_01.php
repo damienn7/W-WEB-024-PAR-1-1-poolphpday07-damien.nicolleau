@@ -1,6 +1,6 @@
 <?php
 
-function  my_facto($nbr)
+function  my_facto($nbr=NULL)
 {
     if($nbr>0 && is_int($nbr))
     {
@@ -16,10 +16,10 @@ function  my_facto($nbr)
     }
     else
     {
-        return NULL;
+        return $nbr;
     }
 
-    if(!isset($nbr))
+    if($nbr==NULL)
     {
         return NULL;
     }

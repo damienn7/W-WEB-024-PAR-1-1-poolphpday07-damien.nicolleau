@@ -1,10 +1,10 @@
 <?php
 
-function is_prime($nbr)
+function is_prime($nbr=NULL)
 {
-    if(!isset($nbr) || !is_int($nbr) || $nbr<0)
+    if($nbr==NULL || !is_int($nbr) || $nbr<0)
     {
-        return NULL;
+        return $nbr;
     }
 
     if($nbr==2)
